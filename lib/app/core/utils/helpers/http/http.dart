@@ -10,7 +10,7 @@ typedef Parser<T> = T Function(dynamic data);
 class Http {
   final String baseUrl;
 
-  Http({this.baseUrl = 'http://192.168.1.66/api_notifi-master/public/api/'});
+  Http({this.baseUrl = 'http://127.0.0.1:8000/api/'});
 
   Future<HttpResult<T>> request<T>(String path,
       {HttpMethod method = HttpMethod.get,

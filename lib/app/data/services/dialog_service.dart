@@ -7,14 +7,13 @@ class DialogService extends GetxService {
   static DialogService get to => Get.find();
 
   void snackBar(Color color, String title, String body) {
-    var SnackDismissDirection;
     Get.snackbar(
       title,
       body,
       colorText: color,
       snackPosition: SnackPosition.BOTTOM,
       isDismissible: true,
-      dismissDirection: SnackDismissDirection.HORIZONTAL,
+      dismissDirection:DismissDirection.horizontal,
       forwardAnimationCurve: Curves.easeOutBack,
       margin: const EdgeInsets.all(15),
     );
