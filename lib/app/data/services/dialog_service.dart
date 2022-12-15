@@ -7,6 +7,7 @@ class DialogService extends GetxService {
   static DialogService get to => Get.find();
 
   void snackBar(Color color, String title, String body) {
+    var SnackDismissDirection;
     Get.snackbar(
       title,
       body,
